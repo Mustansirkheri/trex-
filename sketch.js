@@ -164,9 +164,10 @@ function spawnObstacles() {
 }
 function reset(){
   gameState = PLAY;
+  ground.velocityX = -6;
   gameOver.visible = false;
   restart.visible = false;
-  ground.velocityX = -6;
+  
   ObstaclesGroup.destroyEach();
   cloudsGroup.destroyEach();
   
