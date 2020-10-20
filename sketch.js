@@ -166,7 +166,7 @@ function reset(){
   gameState = PLAY;
   gameOver.visible = false;
   restart.visible = false;
-  
+  ground.velocityX = -6;
   ObstaclesGroup.destroyEach();
   cloudsGroup.destroyEach();
   
